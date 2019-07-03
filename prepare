@@ -1,0 +1,3 @@
+curl -sSLo rib.bz2 http://archive.routeviews.org/dnszones/rib.bz2
+wget http://bgp.potaroo.net/as1221/asnames.txt
+bgpdump -m -O rib.txt rib.bz2

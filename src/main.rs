@@ -114,17 +114,6 @@ fn main() {
         let elems_r:Vec<&str> = elems[1].split(",").collect();
         let mut as_info = elems_r[0..elems_r.len()-1].concat().trim().to_string();
         let mut as_country = elems_r[elems_r.len()-1].trim().to_string();
-        // let mut as_info = elems_r[0].trim().to_string();
-        // let mut as_country = elems_r[1].trim().to_string();
-
-        // if elems_r.len() == 3 {
-        //     as_info = (elems_r[0].to_string() + elems_r[1]).trim().to_string();
-        //     as_country = elems_r[2].trim().to_string();
-        // }
-        // if elems_r.len() == 4 {
-        //     as_info = (elems_r[0].to_string() + elems_r[1] + elems_r[2]).trim().to_string();
-        //     as_country = elems_r[3].trim().to_string();
-        // }
         let as_i = AsInfo{
             as_num: as_num.parse::<i32>().unwrap(),
             as_info: as_info,
